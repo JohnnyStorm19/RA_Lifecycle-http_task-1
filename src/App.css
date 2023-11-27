@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#text-input {
+  padding-inline: 5px;
+}
+
+#timezone-offset:focus {
+  outline: none;
+}
+
+#timezone-offset:hover {
+  cursor: pointer;
+}
+
+.clocks-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.clock-container {
+  position: relative;
+}
+
+.clock-container h2 {
+  cursor: default;
+}
+
+.clock-remover {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  padding: 2px 8px;
+  color: gray;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.clock-remover:hover {
+  color: black;
+}
